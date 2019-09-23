@@ -25,7 +25,7 @@ img {
   margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
   display: flex;
   justify-content: space-between;
 }
@@ -142,6 +142,18 @@ nav a:focus {
   color: var(--dark-grey);
 }
 
+.container-flex {
+  display: flex;
+}
+
+main {
+  width: 70%;
+}
+
+aside {
+  width: 25%;
+}
+
 footer {
   background-color: var(--dark-blue);
   padding: 2em;
@@ -157,7 +169,7 @@ footer p {
     text-align: center;
   }
 
-  .container-nav {
+  .container-flex {
     flex-direction: column;
   }
 
