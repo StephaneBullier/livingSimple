@@ -104,6 +104,12 @@ nav a:focus {
   color: var(--dark-grey);
 }
 
+.post h3 {
+  color: var(--dark-blue);
+  padding-bottom: 1em;
+  border-bottom: 1px solid var(--dark-grey);
+}
+
 @media (max-width: 675px) {
   header {
     text-align: center;
