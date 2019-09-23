@@ -1,0 +1,103 @@
+:root {
+  --white: #ffffff;
+  --light-grey: #f8f8f8;
+  --grey: #ebebeb;
+  --dark-grey: #707070;
+  --darker-grey: #717171;
+  --light-blue: #1792d2;
+  --dark-blue: #143774;
+}
+
+body {
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  width: 95%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  background-color: var(--light);
+  padding: 2em 0;
+}
+
+.title {
+  font-family: "Lora", serif;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 400;
+  color: var(--dark-blue);
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+nav {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--grey);
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--light-blue);
+}
+
+.current-page {
+  border-bottom: 1px solid var(--grey);
+}
+
+.current-page:hover {
+  color: var(--grey);
+}
+
+@media (max-width: 675px) {
+  header {
+    text-align: center;
+  }
+
+  .container-nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav li {
+    margin: 0.8em 0;
+  }
+}
