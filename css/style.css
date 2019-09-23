@@ -11,6 +11,8 @@
 body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
 }
 
 img {
@@ -19,7 +21,7 @@ img {
 
 .container {
   width: 95%;
-  max-width: 1600px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -37,27 +39,33 @@ header {
   font-family: "Lora", serif;
 }
 
+/**********************************
+       Typographie
+***********************************/
+h1,
+h2,
+h3 {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  color: var(--dark-blue);
+}
+
 h1 {
   font-size: 2rem;
   margin: 0;
-  font-weight: 400;
-  color: var(--dark-blue);
 }
 
-h2 {
-  color: var(--dark-blue);
-}
-
-h3 {
+a {
   color: var(--light-blue);
-  font-family: "Lora", serif;
-  font-size: 1.6rem;
-  font-weight: 400;
 }
 
-p {
-  color: var(--dark-grey);
-  font-size: 1.2rem;
+a:hover,
+a:focus {
+  color: var(--dark-blue);
+}
+
+strong {
+  font-weight: 700;
 }
 
 .subtitle {
@@ -67,6 +75,36 @@ p {
   font-size: 0.75rem;
   margin: 0;
 }
+
+.article-title {
+  font-size: 1.5rem;
+}
+
+.article-info,
+.article-read-more {
+  font-size: 0.875rem;
+}
+
+.article-read-more {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--light-blue);
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+  color: var(--dark-blue);
+  text-decoration: underline;
+}
+
+.widget-recent-post-title {
+  font-size: 1.6rem;
+}
+
+/*********************
+   Navigation
+   ***********************/
 
 nav {
   text-transform: uppercase;
@@ -104,10 +142,14 @@ nav a:focus {
   color: var(--dark-grey);
 }
 
-.post h3 {
-  color: var(--dark-blue);
-  padding-bottom: 1em;
-  border-bottom: 1px solid var(--dark-grey);
+footer {
+  background-color: var(--dark-blue);
+  padding: 2em;
+  text-align: center;
+}
+footer p {
+  color: var(--white);
+  opacity: 0.54;
 }
 
 @media (max-width: 675px) {
