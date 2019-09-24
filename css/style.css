@@ -17,7 +17,12 @@ body {
 
 img {
   width: 100%;
+  display: block;
 }
+
+/*************************
+          Layout
+**************************/
 
 .container {
   width: 95%;
@@ -28,15 +33,45 @@ img {
 .container-flex {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 header {
   background-color: var(--light);
   padding: 2em 0;
+  text-align: center;
 }
 
-.title {
-  font-family: "Lora", serif;
+/*********************
+   Navigation
+   ***********************/
+
+nav {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark-grey);
+  font-weight: 700;
+  padding: 0.25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--light-blue);
 }
 
 /**********************************
@@ -66,6 +101,10 @@ a:focus {
 
 strong {
   font-weight: 700;
+}
+
+.title {
+  font-family: "Lora", serif;
 }
 
 .subtitle {
@@ -102,56 +141,12 @@ strong {
   font-size: 1.6rem;
 }
 
-/*********************
-   Navigation
-   ***********************/
-
-nav {
-  text-transform: uppercase;
-  font-size: 1rem;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  justify-content: center;
-}
-
-nav li {
-  margin-left: 2em;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--dark-grey);
-  font-weight: 700;
-  padding: 0.25em 0;
-}
-
-nav a:hover,
-nav a:focus {
-  color: var(--light-blue);
-}
-
 .current-page {
   border-bottom: 1px solid var(--dark-grey);
 }
 
 .current-page:hover {
   color: var(--dark-grey);
-}
-
-.container-flex {
-  display: flex;
-}
-
-main {
-  width: 70%;
-}
-
-aside {
-  width: 25%;
 }
 
 footer {
@@ -164,20 +159,16 @@ footer p {
   opacity: 0.54;
 }
 
-@media (max-width: 675px) {
-  header {
-    text-align: center;
-  }
-
+@media (min-width: 675px) {
   .container-flex {
-    flex-direction: column;
+    flex-direction: row;
   }
 
-  nav ul {
-    flex-direction: column;
+  main {
+    width: 75%;
   }
 
-  nav li {
-    margin: 0.8em 0;
+  aside {
+    width: 20%;
   }
 }
