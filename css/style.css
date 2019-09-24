@@ -92,6 +92,7 @@ h3 {
   font-family: "Lora", serif;
   font-weight: 400;
   color: var(--dark-blue);
+  margin-top: 0;
 }
 
 h1 {
@@ -171,6 +172,42 @@ Articles
   padding-bottom: 1.5em;
   margin-bottom: 1.5em;
   border-bottom: 1px solid var(--dark-grey);
+  display: flex;
+  flex-direction: column;
+}
+
+.article-featured img {
+  order: 1;
+}
+
+.article-info {
+  order: 2;
+}
+
+.article-featured h2 {
+  order: 3;
+}
+
+.article-featured .article-body {
+  order: 4;
+}
+
+.article-featured .article-read-more {
+  order: 5;
+}
+
+.article-recent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5em;
+}
+
+.article-recent-main {
+  order: 2;
+}
+
+article-recent-secondary {
+  order: 1;
 }
 
 @media (min-width: 675px) {
