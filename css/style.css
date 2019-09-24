@@ -43,6 +43,13 @@ header {
   margin-bottom: 2em;
 }
 
+footer {
+  background-color: var(--dark-blue);
+  padding: 3em 0;
+  text-align: center;
+  color: var(--white);
+}
+
 /*********************
    Navigation
    ***********************/
@@ -154,16 +161,6 @@ strong {
 
 .widget-recent-post-title {
   font-size: 1.6rem;
-}
-
-footer {
-  background-color: var(--dark-blue);
-  padding: 2em;
-  text-align: center;
-}
-footer p {
-  color: var(--white);
-  opacity: 0.54;
 }
 
 /***********************************
