@@ -54,12 +54,13 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
+  flex-direction: column;
   padding: 0;
   justify-content: center;
 }
 
 nav li {
-  margin-left: 2em;
+  margin: 0.8em 0;
 }
 
 nav a {
@@ -170,5 +171,13 @@ footer p {
 
   aside {
     width: 20%;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav li {
+    margin-left: 2em;
   }
 }
