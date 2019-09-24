@@ -199,17 +199,53 @@ article-recent-secondary {
   order: 1;
 }
 
-@media (min-width: 675px) {
+/***********************
+      Sidebar
+**********************/
+.sidebar-widget {
+  border: 20px solid var(--grey);
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.sidebar-widget h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+.sidebar-widget-body {
+  color: var(--dark-blue);
+}
+
+.widget-recent-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.widget-recent-post-title {
+  order: 2;
+  font-size: 1.125rem;
+}
+
+.widget-recent-post .widget-image {
+  height: 100px;
+  object-fit: cover;
+}
+
+/***************************
+  Media Queries
+*****************************/
+@media (min-width: 700px) {
   .container-flex {
     flex-direction: row;
   }
 
   main {
-    width: 75%;
+    width: 68%;
   }
 
   aside {
-    width: 20%;
+    width: 30%;
   }
 
   nav ul {
