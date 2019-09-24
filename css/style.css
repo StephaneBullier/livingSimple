@@ -21,6 +21,12 @@ img {
   display: block;
 }
 
+.image-full {
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 2em;
+}
+
 /*************************
           Layout
 **************************/
