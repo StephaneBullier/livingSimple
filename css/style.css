@@ -75,6 +75,14 @@ nav a:focus {
   color: var(--light-blue);
 }
 
+.current-page {
+  border-bottom: 1px solid var(--dark-grey);
+}
+
+.current-page:hover {
+  color: var(--dark-grey);
+}
+
 /**********************************
        Typographie
 ***********************************/
@@ -125,6 +133,10 @@ strong {
   font-size: 0.875rem;
 }
 
+.article-info {
+  margin: 2em 0;
+}
+
 .article-read-more {
   text-transform: uppercase;
   text-decoration: none;
@@ -142,14 +154,6 @@ strong {
   font-size: 1.6rem;
 }
 
-.current-page {
-  border-bottom: 1px solid var(--dark-grey);
-}
-
-.current-page:hover {
-  color: var(--dark-grey);
-}
-
 footer {
   background-color: var(--dark-blue);
   padding: 2em;
@@ -158,6 +162,15 @@ footer {
 footer p {
   color: var(--white);
   opacity: 0.54;
+}
+
+/***********************************
+Articles 
+***********************************/
+.article-featured {
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid var(--dark-grey);
 }
 
 @media (min-width: 675px) {
