@@ -230,4 +230,22 @@ article-recent-secondary {
   nav li {
     margin-left: 2em;
   }
+
+  .article-recent {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .article-recent-main {
+    width: 63%;
+  }
+
+  .article-recent-secondary {
+    width: 35%;
+  }
+
+  .article-image {
+    min-height: 240px;
+    object-fit: cover;
+  }
 }
