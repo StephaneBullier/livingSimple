@@ -115,6 +115,7 @@ h1 {
   margin: 0;
 }
 
+h3,
 a {
   color: var(--light-blue);
 }
@@ -241,6 +242,7 @@ article-recent-secondary {
 
 .widget-recent-post-title {
   order: 2;
+  color: var(--dark-blue);
 }
 
 .widget-recent-post .widget-image {
